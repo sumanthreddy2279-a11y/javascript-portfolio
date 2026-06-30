@@ -1,0 +1,324 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--primary:#3498db;
+--secondary:#2c3e50;
+--accent:#e74c3c;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f4f4;
+}
+
+header{
+background:var(--secondary);
+color:white;
+display:flex;
+justify-content:space-between;
+padding:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+}
+
+nav a:hover{
+color:var(--primary);
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(135deg,#3498db,#2c3e50);
+color:white;
+}
+
+.btn{
+background:var(--accent);
+padding:10px 20px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+margin-top:20px;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:40px;
+}
+
+.skills-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card{
+background:white;
+padding:20px;
+margin-top:20px;
+border-left:5px solid #3498db;
+}
+
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.skills-container{
+flex-direction:column;
+}
+}
+/* ===== Dark Mode ===== */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode header{
+    background:#000;
+}
+
+.dark-mode nav{
+    background:#111;
+}
+
+.dark-mode section{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode .card{
+    background:#2b2b2b;
+    color:white;
+}
+
+.dark-mode .project-card{
+    background:#2b2b2b;
+    color:white;
+    border-left:5px solid #00bfff;
+}
+
+.dark-mode footer{
+    background:#000;
+}
+
+/* ===== Dark Mode Button ===== */
+
+#darkModeBtn{
+    margin-left:20px;
+    padding:10px 18px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+#darkModeBtn:hover{
+    background:#2980b9;
+    transform:scale(1.05);
+}
+
+/* ===== Contact Form ===== */
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    height:120px;
+    resize:vertical;
+}
+
+button[type="submit"]{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button[type="submit"]:hover{
+    background:#2980b9;
+}
+
+#formMessage{
+    margin-top:15px;
+    font-weight:bold;
+    font-size:16px;
+}
+/* ===== Project Gallery ===== */
+
+#gallery{
+
+text-align:center;
+
+padding:50px;
+
+}
+
+.gallery-container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+#galleryImage{
+
+width:500px;
+
+max-width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+box-shadow:0 0 15px rgba(0,0,0,.3);
+
+transition:0.4s;
+
+}
+
+#galleryImage:hover{
+
+transform:scale(1.03);
+
+}
+
+#prevBtn,
+#nextBtn{
+
+padding:12px 20px;
+
+font-size:16px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+background:#3498db;
+
+color:white;
+
+transition:.3s;
+
+}
+
+#prevBtn:hover,
+#nextBtn:hover{
+
+background:#2980b9;
+
+}
+/* ===========================
+   To-Do List
+=========================== */
+
+.todo-container{
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+}
+
+#taskInput{
+    width:70%;
+    padding:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+#addTaskBtn{
+    padding:12px 20px;
+    margin-left:10px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#addTaskBtn:hover{
+    background:#2980b9;
+}
+
+#taskList{
+    margin-top:20px;
+    list-style:none;
+}
+
+#taskList li{
+    background:white;
+    padding:12px;
+    margin:10px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+.deleteBtn{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}

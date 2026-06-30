@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sumanth Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Arumulla Sumanth Reddy</h1>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Blockchain & Web Developer</h2>
+    <p>Building Modern Websites and Blockchain Applications</p>
+
+    <a href="#contact" class="btn">
+        Contact Me
+    </a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Computer Science student specializing in Blockchain Technology.
+    </p>
+</section>
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">Python</div>
+        <div class="card">Blockchain</div>
+        <div class="card">Solidity</div>
+        <div class="card">GitHub</div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Blockchain Land Registry System</h3>
+
+        <p>
+            Secure land registration using Ethereum and Solidity.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>FarmChain</h3>
+
+        <p>
+            Blockchain-powered direct trade platform.
+        </p>
+    </div>
+    <section id="gallery">
+
+    <h2>Project Gallery</h2>
+
+    <div class="gallery-container">
+
+        <button id="prevBtn">⬅ Previous</button>
+
+        <img
+        id="galleryImage"
+        src="images\project1.png.jpeg"
+        alt="Project Image">
+
+        <button id="nextBtn">Next ➡</button>
+
+    </div>
+
+</section>
+
+<section id="todo">
+
+    <h2>My To-Do List</h2>
+
+    <div class="todo-container">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task">
+
+        <button id="addTaskBtn">
+            Add Task
+        </button>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+</section>
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+<textarea
+id="message"
+placeholder="Enter your message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+<p id="formMessage"></p>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Arumulla Sumanth Reddy</p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
