@@ -187,10 +187,10 @@ hero.innerHTML="🌙 Good Evening, Welcome!";
 // ===============================
 
 const galleryImages = [
-    "images/project1.png.jpeg",
-    "images/project2.png.jpeg",
-    "images/project3.png.jpeg",
-    "images/project4.png.jpeg",
+    "project1.png.jpeg",
+    "project2.png.jpeg",
+    "project3.png.jpeg",
+    "project4.png.jpeg",
 ];
 
 let currentImage = 0;
